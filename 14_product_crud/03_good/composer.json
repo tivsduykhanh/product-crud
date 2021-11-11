@@ -1,0 +1,15 @@
+{
+    "name": "duykhanh/03_good",
+    "authors": [
+        {
+            "name": "Dao Duy Khanh",
+            "email": "ddkhanh280200@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}

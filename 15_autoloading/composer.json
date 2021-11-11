@@ -1,0 +1,17 @@
+{
+    "name": "duykhanh/15_autoloading",
+    "authors": [
+        {
+            "name": "Dao Duy Khanh",
+            "email": "ddkhanh280200@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "./app"
+        }
+    }
+}
