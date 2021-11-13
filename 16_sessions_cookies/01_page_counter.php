@@ -1,3 +1,20 @@
+<?php
+session_start(); //khởi tạo session
+// echo session_id();  //hiển thị id của session
+// $_SESSION['name'] = 'Khanh'; //gán session name = 'khanh'
+
+$_SESSION['page_counter'] = $_SESSION['page_counter'] ?? 0;
+$_SESSION['page_counter']++;
+
+$pageCounter = $_SESSION['page_counter'] ?? 0;
+if ($_SESSION['page_counter'] === 10) {
+    echo 'Thank for visiting us 10 times' . '<br>';
+    session_unset(); //xoa toan bo session
+    session_destroy();
+}
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +25,6 @@
     <title>Document</title>
 </head>
 <body>
-<h1>My Awesome page></h1>
+<h1>My Awesome page, Visited: <?php echo $pageCounter ?> times</h1>
 </body>
 </html>
